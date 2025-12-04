@@ -64,7 +64,7 @@ async function processImage(
   const formData = new FormData();
   formData.append('file', file);
   
-  const apiPromise = fetch('http://localhost:8000/colorize', {
+  const apiPromise = fetch('https://noob-coder01-bw-colorizer-backend.hf.space/colorize', {
       method: 'POST',
       body: formData,
   })
